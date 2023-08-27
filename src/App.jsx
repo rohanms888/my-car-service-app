@@ -10,14 +10,22 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/" exact component={CarSelection} />
-          <Route path="/repair" component={RepairTypes} />
-          <Route path="/calendar" component={Calendar} />
-          <Route path="/confirmation" component={Confirmation} />
+          <Route path="/carSelection" element={CarSelection} />
+          <Route path="/repair" element={RepairTypes} />
+          <Route path="/calendar" element={Calendar} />
+          <Route path="/confirmation" element={Confirmation} />
+
+          {/* Add a catch-all route for the root URL */}
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
   );
+}
+
+// Define a component for the root URL (you can replace this with your desired content)
+function Home() {
+  return <h1>Welcome to the Home Page</h1>;
 }
 
 export default App;
