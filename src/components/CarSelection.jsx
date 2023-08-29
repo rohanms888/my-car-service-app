@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { selectCar } from '../actions/carActions';
-import './CarSelection.css'; // Import your CSS file
+import './CarSelection.css'; 
 
 
 const CarSelection = ({ cars, selectCar }) => {
