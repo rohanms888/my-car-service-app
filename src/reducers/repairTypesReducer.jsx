@@ -1,9 +1,9 @@
 
 const initialState = {
     repairTypes: [
-      { id: 1, name: 'Engine Repair', price: 5000 },
-      { id: 2, name: 'Brake Repair', price: 2500 },
-      { id: 3, name: 'Transmission Repair', price: 7000 },
+      { id: 1, name: 'Engine Repair', price: 500 },
+      { id: 2, name: 'Brake Repair', price: 250 },
+      { id: 3, name: 'Transmission Repair', price: 700 },
       
     ],
   };
